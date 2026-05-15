@@ -2,8 +2,8 @@ import random
 from typing import Optional
 from pathlib import Path
 
-from fancy_namer.exceptions import InvalidToolNameError
-from fancy_namer.enums import NameType
+from .exceptions import InvalidToolNameError
+from .enums import NameType
 
 
 class FancyNamer:
