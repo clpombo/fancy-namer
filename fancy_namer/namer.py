@@ -24,7 +24,7 @@ class FancyNamer:
             case NameType.TOOL:
                 nouns = [tool_name]  # For TOOL type, the noun is just the tool name
             case _:
-                raise InvalidToolNameError(f"Unsupported name type: {self.name_type}")
+                raise InvalidToolNameError(f"Unsupported name type: {name_type}")
         places = FancyNamer._load_word_list("places.txt")
         random_gen = random.Random(random_seed)
         adjective = random_gen.choice(adjectives)
