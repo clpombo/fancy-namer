@@ -1,0 +1,15 @@
+API Abstraction Algorithm AspectOrientedProgramming Authentication Authorization 
+Automata Backtracking BigData BinaryTree Blockchain BranchPrediction BufferOverflow 
+Caching CloudComputing Compiler ComputerVision Concurrency Containerization 
+ContinuousDeployment ContinuousIntegration Cryptography DNS DataMining DataStructure 
+Database Deadlock Decryption DeepLearning Denormalization Deserialization DevOps 
+DistributedSystem Docker DynamicProgramming EdgeComputing Encapsulation Encryption 
+EventDrivenArchitecture FaultTolerance FiniteStateMachine Firewall FunctionalProgramming 
+GarbageCollection Git GraphQL GraphTraversal GreedyAlgorithm HTTP HTTPS HashMap Hashing 
+Heap Hypervisor Indexing Inheritance Interpreter Kernel Kubernetes LambdaCalculus Latency 
+LinkedList LoadBalancer MachineLearning MemoryLeak MessageQueue Microservices 
+Multithreading Mutex NaturalLanguageProcessing NeuralNetwork NoSQL Normalization 
+ObjectOrientedProgramming OperatingSystem Polymorphism ProceduralProgramming Protocol 
+PubSub QuantumComputing Queue RESTful Recursion Redundancy ReinforcementLearning 
+Replication ReverseEngineering SQL Sandboxing Scalability Semaphore Serialization 
+Sharding Stack TCPIP Throughput Trie VersionControl Virtualization WebAssembly
