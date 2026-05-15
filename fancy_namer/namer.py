@@ -13,8 +13,6 @@ class FancyNamer:
             tool_name: Optional[str] = None,
             random_seed: Optional[int] = None
         ) -> str:
-        if (name_type == NameType.TOOL and not tool_name):
-            raise InvalidToolNameError("tool_name must be provided when using NameType.TOOL")
         adjectives = FancyNamer._load_word_list("adjectives.txt")
         match name_type:
             case NameType.STANDARD:
@@ -22,6 +20,8 @@ class FancyNamer:
             case NameType.COMPUTER_SCIENCE:
                 nouns = FancyNamer._load_word_list("computer_science_terms.txt")
             case NameType.TOOL:
+                if not tool_name:
+                    raise InvalidToolNameError("tool_name must be provided when using NameType.TOOL")
                 nouns = [tool_name]  # For TOOL type, the noun is just the tool name
             case _:
                 raise InvalidToolNameError(f"Unsupported name type: {name_type}")
