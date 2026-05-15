@@ -45,32 +45,3 @@ class FancyNamer:
         place = self.random_gen.choice(self.places)
         return f"{adjective}_{noun}_of_{place}"
     
-
-if __name__ == "__main__":
-    # Generate 10 unique names based on nouns
-    fancy_namer = FancyNamer()
-    generated_names = []
-    for i in range(10):
-        generated_names.append(fancy_namer.generate_name())
-    print(f"10 unique noun-based names: {generated_names}")
-
-    # Generate 10 unique noun-based names with seed
-    fancy_namer_with_seed = FancyNamer(random_seed=42)
-    generated_names_with_seed = []
-    for i in range(10):
-        generated_names_with_seed.append(fancy_namer_with_seed.generate_name())
-    print(f"10 unique noun-based names with seed 42: {generated_names_with_seed}")
-
-    # Generate 10 unique Computer Science related names
-    fancy_namer_cs = FancyNamer(name_type=NameType.COMPUTER_SCIENCE)
-    generated_names_cs = []
-    for i in range(10):
-        generated_names_cs.append(fancy_namer_cs.generate_name())
-    print(f"10 unique Computer Science related names: {generated_names_cs}")
-
-    # Generate 10 unique tool names
-    fancy_namer_tools = FancyNamer(name_type=NameType.TOOL, tool_name="ToolName")
-    generated_names_tools = []
-    for i in range(10):
-        generated_names_tools.append(fancy_namer_tools.generate_name())
-    print(f"10 unique tool names: {generated_names_tools}")
