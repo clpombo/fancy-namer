@@ -5,13 +5,37 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fancy-namer"
 version = "0.1.0"
-description = "A fancy name generator"
+description = "Human-readable random name generator for tools, services, and software systems"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
 authors = [
-    {name = "Carlos Gustavo Lopez Pombo", email = "clpombo@gmail.com"}
+  { name = "Carlos Gustavo Lopez Pombo" }
 ]
-requires-python = ">=3.12"
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
 dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "mypy",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["fancy_namer*"]
+
+[tool.setuptools.package-data]
+fancy_namer = ["data/*.txt"]
+
+[tool.mypy]
+strict = true
